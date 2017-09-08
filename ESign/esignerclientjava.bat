@@ -1,0 +1,1 @@
+start javaw -jar "C:\Projeler\ESign\ESignerClientJava\dist\ESignerClientJava.jar" %1

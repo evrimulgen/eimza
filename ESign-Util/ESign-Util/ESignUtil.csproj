@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED9C88DA-91E9-42E9-9491-4341E24F3838}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ESign_Util</RootNamespace>
+    <AssemblyName>ESignUtil</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rt">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\asn1rt.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\itextsharp-all-5.5.10\itextsharp-dll-core\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-asic">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-asic.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-asn">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-asn.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-certstore">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-certstore.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-certvalidation">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-certvalidation.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-cmssignature">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-cmssignature.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-common">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-common.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-crypto">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-iaik_wrapper">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-iaik_wrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-infra">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-infra.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-managedPkcs11">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-managedPkcs11.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-mssclient">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-mssclient.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-mssclient-aveaprovider">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-mssclient-aveaprovider.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-mssclient-turkcellprovider">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-mssclient-turkcellprovider.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-pkcs11net">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-pkcs11net.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-signature">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-signature.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-smartcard">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-smartcard.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-xmlsignature">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\ma3api-xmlsignature.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\MA3-CSHARP-API-2.1.8\MA3-CSHARP-API-2.1.8\lib\x86\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ESignUtil.cs" />
+    <Compile Include="IESignUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

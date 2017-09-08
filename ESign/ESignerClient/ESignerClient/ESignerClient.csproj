@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D5E563E-CD1D-4EDC-B266-E24C8537C43B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ESignerClient</RootNamespace>
+    <AssemblyName>ESignerClient</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>http://localhost/ESignerClient/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rt">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\asn1rt.dll</HintPath>
+    </Reference>
+    <Reference Include="ESignUtil">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ESignUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Documents and Settings\cihan\Belgelerim\İndirilenler\itextsharp-all-5.5.10\itextsharp-dll-core\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-asic">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-asic.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-asn">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-asn.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-certstore">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-certstore.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-certvalidation">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-certvalidation.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-cmssignature">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-cmssignature.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-common">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-common.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-crypto">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-crypto-bouncyprovider">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-crypto-bouncyprovider.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-iaik_wrapper">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-iaik_wrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-infra">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-infra.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-managedPkcs11">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-managedPkcs11.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-mssclient">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-mssclient.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-mssclient-aveaprovider">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-mssclient-aveaprovider.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-mssclient-turkcellprovider">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-mssclient-turkcellprovider.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-pkcs11net">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-pkcs11net.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-signature">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-signature.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-smartcard">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-smartcard.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-xmlsignature">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\ma3api-xmlsignature.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\ESign-Util\ESign-Util\bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\SmartCardUtils.cs" />
+    <Compile Include="Resources.tr-TR.Designer.cs">
+      <DependentUpon>Resources.tr-TR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\FileServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SmartCardForms\frmSmartCardSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartCardForms\frmSmartCardSelector.Designer.cs">
+      <DependentUpon>frmSmartCardSelector.cs</DependentUpon>
+    </Compile>
+    <Content Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Content>
+    <EmbeddedResource Include="Resources.tr-TR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.tr-TR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartCardForms\frmSmartCardSelector.resx">
+      <DependentUpon>frmSmartCardSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="config\profiller\Elektronik_Imza_Kullanim_Profilleri_Rehberi.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\FileServices\WSFileManager.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\FileServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FileServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FileServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FileServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FileServices\WSFileManager.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\certval-policy-malimuhur.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\certval-policy-test.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\certval-policy.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\esya-signature-config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\smartcard-config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\xmlsignature-config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lisans\lisans.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lisans\test_lisans.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

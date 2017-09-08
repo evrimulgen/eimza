@@ -1,0 +1,28 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DocumentData" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DocumentData">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DocumentId" type="xs:int" minOccurs="0" />
+                <xs:element name="FileName" type="xs:string" minOccurs="0" />
+                <xs:element name="FileHash" type="xs:string" minOccurs="0" />
+                <xs:element name="SessionId" type="xs:string" minOccurs="0" />
+                <xs:element name="UserName" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <DocumentData>
+    <DocumentId>2</DocumentId>
+    <FileName>sample.pdf</FileName>
+    <FileHash>4723e2b722a2f1b48b9965e3a5772364</FileHash>
+    <SessionId>malsdxeg0adductthorhwbsr</SessionId>
+    <UserName>admin</UserName>
+  </DocumentData>
+</NewDataSet>

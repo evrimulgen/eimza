@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="helloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="helloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="helloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileBytes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="documentID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFileBytesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFileBytesResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="uploadSignedFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="documentID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="signedFileBytes" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="uploadSignedFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="uploadSignedFileResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="helloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:helloWorld" />
+  </wsdl:message>
+  <wsdl:message name="helloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:helloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFileBytesSoapIn">
+    <wsdl:part name="parameters" element="tns:getFileBytes" />
+  </wsdl:message>
+  <wsdl:message name="getFileBytesSoapOut">
+    <wsdl:part name="parameters" element="tns:getFileBytesResponse" />
+  </wsdl:message>
+  <wsdl:message name="uploadSignedFileSoapIn">
+    <wsdl:part name="parameters" element="tns:uploadSignedFile" />
+  </wsdl:message>
+  <wsdl:message name="uploadSignedFileSoapOut">
+    <wsdl:part name="parameters" element="tns:uploadSignedFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSFileManagerSoap">
+    <wsdl:operation name="helloWorld">
+      <wsdl:input message="tns:helloWorldSoapIn" />
+      <wsdl:output message="tns:helloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFileBytes">
+      <wsdl:input message="tns:getFileBytesSoapIn" />
+      <wsdl:output message="tns:getFileBytesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadSignedFile">
+      <wsdl:input message="tns:uploadSignedFileSoapIn" />
+      <wsdl:output message="tns:uploadSignedFileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSFileManagerSoap" type="tns:WSFileManagerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="helloWorld">
+      <soap:operation soapAction="http://tempuri.org/helloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFileBytes">
+      <soap:operation soapAction="http://tempuri.org/getFileBytes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadSignedFile">
+      <soap:operation soapAction="http://tempuri.org/uploadSignedFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSFileManagerSoap12" type="tns:WSFileManagerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="helloWorld">
+      <soap12:operation soapAction="http://tempuri.org/helloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFileBytes">
+      <soap12:operation soapAction="http://tempuri.org/getFileBytes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadSignedFile">
+      <soap12:operation soapAction="http://tempuri.org/uploadSignedFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSFileManager">
+    <wsdl:port name="WSFileManagerSoap" binding="tns:WSFileManagerSoap">
+      <soap:address location="http://localhost/esigndys/WSFileManager.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSFileManagerSoap12" binding="tns:WSFileManagerSoap12">
+      <soap12:address location="http://localhost/esigndys/WSFileManager.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
